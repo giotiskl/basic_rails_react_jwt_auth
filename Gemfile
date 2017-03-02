@@ -20,6 +20,10 @@ gem 'puma', '~> 3.0'
  gem 'bcrypt', '~> 3.1.7'
  # Use JWT library for AUTH
  gem 'jwt'
+ # Use foreman to run front and backend simultaneously
+ gem 'foreman'
+ # Use simple_command for creating services
+ gem 'simple_command'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

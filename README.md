@@ -1,24 +1,19 @@
-# README
+# Simple React - Rails JWT Authentication Example
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Frontend
+The frontend is built using create-react-app and server through webpack dev server. To build the dependencies:
+* cd client
+* (npm -g install yarn (if you do not have yarn already installed, you should))
+* yarn install
 
-Things you may want to cover:
+## Backend
+The backend consists of a Rails 5 API, basic user authentication with JWT.
+* bundle install
+* rake db:migrate
 
-* Ruby version
+## Start the app
+```` rake start ````
 
-* System dependencies
+## Running everything together
+There is a small helper rake task named start that launches both the webpack-dev-server and the rails server through Foreman. The webpack-dev-server proxies all requests to the Rails API to comply with the Same-Origin Policy.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
